@@ -22,12 +22,12 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 
 
 # Worklog
-Markup : - [X] Development Enviroment setup: 30 min
-         - [X] Front-end development: 3 hours
-         - [X] Voice123 Search API call: 1 hour
-         - [ ] Binding the datar returned from API into voice-component 3.5 hours
+ - [X] Development Enviroment setup: 30 min
+ - [X] Front-end development: 3 hours
+ - [X] Voice123 Search API call: 1 hour
+ - [ ] Binding the datar returned from API into voice-component 3.5 hours
 
 # Future improvements and recommendations.
- Markup : * Bind the data returned from the API into the component, at this point the data can be visualizaded from the browser console
-          * Work in the call to the API
+  * Bind the data returned from the API into the component, at this point the data can be visualizaded from the browser console
+  * Work in the call to the API
          

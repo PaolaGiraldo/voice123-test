@@ -1,6 +1,4 @@
-# Voice123Test
-
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.1.
+# Application setup guide.
 
 ## Development server
 
@@ -25,3 +23,15 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+# Worklog
+Markup : - [X] Development Enviroment setup: 30 min
+         - [X] Front-end development: 3 hours
+         - [X] Voice123 Search API call: 1 hour
+         - [ ] Binding the datar returned from API into voice-component 3.5 hours
+
+# Future improvements and recommendations.
+ Markup : * Bind the data returned from the API into the component, at this point the data can be visualizaded from the browser console
+          * Work in the call to the API
+         

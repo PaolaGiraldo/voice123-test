@@ -22,8 +22,17 @@
   }
 
 .header-image {
-    background-image: url('../assets/icon.png');
+    background-image: url('../../../assets/icon.png');
     background-size: cover;
   }
 
+button {
+    background-color:#1F88E5;
+    color: white;
+}
 
+.mat-card-actions {
+    margin-left: 0;
+    margin-right: -8px;
+    padding: 8px 0;
+}

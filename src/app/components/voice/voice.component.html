@@ -1,0 +1,28 @@
+<div class="parent">
+<mat-card class="main-card">
+    <mat-card-header>
+      <div mat-card-avatar class="header-image"></div>
+      <mat-card-title> Search Results
+      </mat-card-title>
+      <mat-card-subtitle>Voice Actors</mat-card-subtitle>
+
+    </mat-card-header>
+    <mat-card-actions>
+        <button mat-raised-button [routerLink]="'/search'">
+            Back to Search
+        </button>
+    </mat-card-actions>
+    <mat-card-content *ngFor="let voice of voices">
+
+      <p>
+        {{ voice }}
+
+    </p>
+    
+
+    </mat-card-content>
+
+  </mat-card>
+</div>
+
+

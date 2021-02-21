@@ -1,0 +1,26 @@
+<div class="parent">
+    <mat-card class="main-card">
+        <form [formGroup]="form" (ngSubmit)="searchVoices()">
+            <mat-card-header>
+                <div mat-card-avatar class="header-image"></div>
+                <mat-card-title> Search at Voice123
+                </mat-card-title>
+                <mat-card-subtitle>Search for voice actors</mat-card-subtitle>
+                
+            </mat-card-header>
+
+            <mat-card-content>
+                <mat-form-field appearance="outline">
+                    <mat-label>Search</mat-label>
+                    <input matInput formControlName="searchField">
+                </mat-form-field>
+            </mat-card-content>
+
+            <mat-card-actions>
+                <button type="submit" mat-raised-button>
+                    Search
+                </button>
+            </mat-card-actions>
+        </form>
+    </mat-card>
+</div>

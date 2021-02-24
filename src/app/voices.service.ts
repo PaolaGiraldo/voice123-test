@@ -13,7 +13,7 @@ export class VoicesService {
 
 
   getSearchVoices(keyWords: any): any {
-    const apiUrl = `https://api.sandbox.voice123.com/providers/search/?service=voice_over&keywords=${keyWords}`;
+    const apiUrl = `https://api.sandbox.voice123.com/providers/search/?service=voice_over&keywords=${keyWords}&page=1`;
     const req = this.http.get(apiUrl);
     return req;
   }

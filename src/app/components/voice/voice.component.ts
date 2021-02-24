@@ -9,7 +9,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class VoiceComponent implements OnInit {
 
-  voices: string[] = [];
+  voices: any[] = [];
 
   constructor(
     private voicesService: VoicesService,

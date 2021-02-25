@@ -1,5 +1,5 @@
 <div class="parent">
-<mat-card class="main-card">
+  <mat-card class="main-card">
     <mat-card-header>
       <div mat-card-avatar class="header-image"></div>
       <mat-card-title> Search Results
@@ -8,23 +8,32 @@
 
     </mat-card-header>
     <mat-card-actions>
-        <button mat-raised-button [routerLink]="'/search'">
-            Back to Search
-        </button>
+      <button mat-raised-button [routerLink]="'/search'">
+        Back to Search
+      </button>
     </mat-card-actions>
     <mat-card-content *ngFor="let voice of voices">
 
-    <mat-card-header>
-      <div mat-card-avatar ></div>
-      <mat-card-title> {{ voice.user.name }}
-      </mat-card-title>
-      <mat-card-subtitle><a href="https://voice123.com/{{voice.user.username}}">Profile Page</a> </mat-card-subtitle>
-
-    </mat-card-header>
-
+      <mat-card-header>
+        <div mat-card-avatar class="profile-image"
+          [ngStyle]="{ 'background-image': 'url('+ voice.user.picture_small +')' }">
+        </div>
+        <mat-card-title> {{ voice.user.name }}</mat-card-title>
+        <mat-card-subtitle>
+          <a href="https://voice123.com/{{voice.user.username}}" target="_blank">Profile Page</a>
+        </mat-card-subtitle>
+      </mat-card-header>
+      {{ voice.summary }}
+      <ngx-audio-player [autoPlay]="false" muted="muted" [displayPlaylist]="msaapDisplayPlayList"
+        [pageSizeOptions]="msaapPageSizeOptions" [displayArtist]="msaapDisplayArtist"
+        [displayDuration]="msaapDisplayDuration" [displayVolumeControls]="msaapDisplayVolumeControls"
+        [displayRepeatControls]="msaapDisplayRepeatControls" [disablePositionSlider]="msaapDisablePositionSlider">
+      </ngx-audio-player>
     </mat-card-content>
+    <mat-paginator [length]="totalPages" [pageSize]=10 (page)="pageEvent = paginatorEvent($event)" showFirstLastButtons>
+    </mat-paginator>
+
 
   </mat-card>
+
 </div>
-
-
